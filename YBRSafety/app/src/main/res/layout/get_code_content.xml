@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+
+    tools:showIn="@layout/get_code_bar">
+    <!--tools:context=".MainActivity"-->
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@drawable/bkg"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="5"
+            android:orientation="vertical"
+            android:paddingTop="100dp"
+            >
+            <!--显示安全码框-->
+            <TextView
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="SafeCode"
+                android:fontFamily="cursive"
+                android:textSize="30dp"
+                android:textColor="#FFFFFF"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="50px"
+            android:paddingRight="50px"
+            android:paddingTop="200px"
+            android:paddingBottom="200px"
+            android:layout_margin="15dp"
+            android:background="#55FFFFFF"
+
+
+            >
+                <TextView android:id="@+id/show_code"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:textColor="#FFFFFF"
+                    android:enabled="false"
+                    android:background="@drawable/shape_bk"
+                    android:layout_marginBottom="20dp"
+                    android:gravity="center"
+
+                    android:textSize="32dp"
+
+                    />
+
+
+            <!--获取安全码框-->
+
+
+                <ProgressBar
+                    android:id="@+id/progress_bar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="10dp"
+                    android:indeterminateDrawable="@android:drawable/progress_indeterminate_horizontal"
+                    android:indeterminateOnly="false"
+                    android:max="15000"
+                    android:maxHeight="10dp"
+                    android:minHeight="16dp"
+                    android:progress="20"
+                    android:progressDrawable="@drawable/bar_style"
+                     />
+                <TextView
+                    android:id="@+id/remainTime"
+                    android:layout_marginTop="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:fontFamily="cursive"
+                    android:textSize="20dp"
+                    android:textColor="#FFF"
+                    android:gravity="center"
+
+                    />
+        </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</android.support.constraint.ConstraintLayout>

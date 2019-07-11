@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/nav_modify"
+            android:icon="@drawable/modify"
+            android:title="修改密码" />
+        <item
+            android:id="@+id/nav_change"
+            android:icon="@drawable/find"
+            android:title="变更对外Key" />
+        <item
+            android:id="@+id/nav_getid"
+            android:icon="@drawable/getid"
+            android:title="获取对外Key" />
+        <item
+            android:id="@+id/nav_unbind"
+            android:icon="@drawable/find"
+            android:title="绑定查询" />
+
+    </group>
+
+
+
+</menu>
